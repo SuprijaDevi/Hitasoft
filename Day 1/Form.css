@@ -1,0 +1,52 @@
+body {
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20201101/pngtree-scene-with-geometrical-forms-the-poster-model-minimal-background-render-image_452981.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container {
+    background-color: #ffffff11;
+    padding: 40px;
+    box-shadow: 0 0 10px rgb(27, 135, 230);
+    width: 300px;
+    margin-left: 600px;
+    margin-top: 80px;
+    color: rgb(2, 2, 54);
+}
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="password"],
+select {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.248);
+}
+.gender {
+    margin-bottom: 15px;
+}
+.gender label {
+    margin-right: 20px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4568a0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #4CAF50;
+}
