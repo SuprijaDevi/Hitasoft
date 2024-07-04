@@ -5,8 +5,8 @@ body {
     background-size: cover;
 }
 @font-face {
-    font-family: 'Montserrat';
-    src: url('Fonts/Montserrat-Light.ttf');
+    font-family: 'PlaywriteGBS';
+    src: url('Fonts/PlaywriteGBS-Light.ttf');
 }
 .form-container {
     background-color: #ffffff4e;
@@ -17,7 +17,7 @@ body {
     margin-top: 80px;
     margin-bottom: 100px;
     color: rgb(14, 8, 51);
-    font-family: 'Montserrat';
+    font-family: 'PlaywriteGBS';
 }
 h2 {
     text-align: center;
@@ -64,7 +64,7 @@ button:hover {
     margin-top: 20px;
     margin-left: 90px;
     margin-bottom: 50px;
-    font-family: 'Montserrat';
+    font-family: 'PlaywriteGBS';
 }
 
 .data-table {
