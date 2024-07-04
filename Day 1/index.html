@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <!-- Registration Form -->
+        <div class="form-container">
+            <form>
+                <h2>Registration Form</h2>
+
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="FirstName" required>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="LastName" required>
+
+                <label>Gender:</label>
+                <div class="gender">
+                    <label for="male">
+                        <input type="radio" id="male" name="gender" value="male" required> Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" id="female" name="gender" value="female"> Female
+                    </label>
+                    <label for="other">
+                        <input type="radio" id="other" name="gender" value="other"> Other
+                    </label>
+                </div>
+
+                <label for="course">Course:</label>
+                <select id="course" name="course" required>
+                    <option value="" disabled selected>Select Course</option>
+                    <option value="course1">Ethical Hacking</option>
+                    <option value="course2">Advanced Java</option>
+                    <option value="course3">Backend</option>
+                </select>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <!-- Registration Table -->
+        <div class="table-container">
+            <table class="data-table">
+                <caption><h2>Registered Users</h2></caption>
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Gender</th>
+                        <th>Course</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Suprija</td>
+                        <td>Devi</td>
+                        <td>Female</td>
+                        <td>Ethical Hacking</td>
+                    </tr>
+                    <tr>
+                        <td>Rose</td>
+                        <td>Priya</td>
+                        <td>Female</td>
+                        <td>Advanced Java</td>
+                    </tr>
+                    <tr>
+                        <td>Suresh</td>
+                        <td>Kumar</td>
+                        <td>Male</td>
+                        <td>Advanced Java</td>
+                    </tr>
+                    <tr>
+                        <td>Ramesh</td>
+                        <td>Kumar</td>
+                        <td>Male</td>
+                        <td>Backend</td>
+                    </tr>
+                    <tr>
+                        <td>Sanga</td>
+                        <td>Mithra</td>
+                        <td>Female</td>
+                        <td>Backend</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
