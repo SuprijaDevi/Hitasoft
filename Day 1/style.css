@@ -13,9 +13,7 @@ body {
     padding: 40px;
     box-shadow: 0 0 10px rgb(27, 135, 230);
     width: 300px;
-    margin-left: 600px;
-    margin-top: 80px;
-    margin-bottom: 100px;
+    margin: 80px auto 100px;
     color: rgb(14, 8, 51);
     font-family: 'PlaywriteGBS';
 }
@@ -31,7 +29,7 @@ label {
 input[type="text"],
 input[type="password"],
 select {
-    width: 95%;
+    width: 100%;
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #000;
