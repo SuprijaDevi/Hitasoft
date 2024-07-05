@@ -63,8 +63,9 @@
 .home-image {
     width: 100%;
 }
-.about-container h2 {
+h2 {
     text-align: center;
     color: #A91D3A;
     font-size: 36px;
+    margin-top: 20px;
 }
