@@ -1,7 +1,10 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+}
 .container {
     width: 100%; 
     justify-content: center; 
-    font-family: 'Montserrat';
 }
 @font-face {
     font-family: 'Montserrat';
@@ -18,6 +21,7 @@
     padding: 10px 20px;
     background-color: rgba(196, 195, 195, 0.485);
     border: 1px solid #f1f1f1;
+    z-index: 10;
 }
 .navbar-container:hover {
     box-shadow: 4px 4px 4px #A91D3A;
