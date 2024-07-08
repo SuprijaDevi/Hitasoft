@@ -73,3 +73,59 @@ h2 {
     font-size: 36px;
     margin-top: 20px;
 }
+.gallery-container {
+    margin-bottom: 20px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}  
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 300%;
+}
+.carousel-item {
+    flex: 1 100%;
+    width: 100%;
+}  
+.carousel-item img {
+    width: 100%;
+    display: block;
+} 
+input[name="slides"] {
+    display: none;
+} 
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+} 
+.carousel-controls label {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+} 
+#slide1:checked ~ .carousel-inner {
+    transform: translateX(0%);
+}  
+#slide2:checked ~ .carousel-inner {
+    transform: translateX(-33.33%);
+}
+  
+#slide3:checked ~ .carousel-inner {
+    transform: translateX(-66.66%);
+}
+#slide1:checked ~ .carousel-controls label:nth-child(1),
+#slide2:checked ~ .carousel-controls label:nth-child(2),
+#slide3:checked ~ .carousel-controls label:nth-child(3) {
+    background-color: #717171;
+}
+  
