@@ -2,20 +2,15 @@ body {
     margin: 0;
     font-family: 'Montserrat';
 }
-.container {
-    width: 100%; 
-    justify-content: center; 
-}
 @font-face {
     font-family: 'Montserrat';
     src: url('Fonts/Montserrat-Light.ttf');
 }
 .navbar-container {
-    width: 100%;
-    margin: 20px 150px ;
-    max-width: 1200px;
-    display: flex;
     position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
@@ -64,9 +59,6 @@ body {
 .login-button a:hover {
     color: #C73659;
 }
-.home-image {
-    width: 100%;
-}
 h2 {
     text-align: center;
     color: #A91D3A;
@@ -76,56 +68,14 @@ h2 {
 .gallery-container {
     margin-bottom: 20px;
 }
-
 .carousel {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    overflow: hidden;
-}  
+    height: 100vh;
+}
 .carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease;
-    width: 300%;
+    height: 100%;
 }
-.carousel-item {
-    flex: 1 100%;
-    width: 100%;
-}  
 .carousel-item img {
-    width: 100%;
-    display: block;
-} 
-input[name="slides"] {
-    display: none;
-} 
-.carousel-controls {
-    display: flex;
-    justify-content: center;
-} 
-.carousel-controls label {
-    height: 15px;
-    width: 15px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
-} 
-#slide1:checked ~ .carousel-inner {
-    transform: translateX(0%);
-}  
-#slide2:checked ~ .carousel-inner {
-    transform: translateX(-33.33%);
-}
-  
-#slide3:checked ~ .carousel-inner {
-    transform: translateX(-66.66%);
-}
-#slide1:checked ~ .carousel-controls label:nth-child(1),
-#slide2:checked ~ .carousel-controls label:nth-child(2),
-#slide3:checked ~ .carousel-controls label:nth-child(3) {
-    background-color: #717171;
+    height: 100%;
+    object-fit: cover;
 }
   
