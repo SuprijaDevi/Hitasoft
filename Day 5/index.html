@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav-container">
+        <div class="nav-left">
+            <img src="assets/airbnb.png" alt="nav-img" class="nav-logo">
+        </div>
+        <div class="nav-center">
+            <ul class="nav-links">
+                <li><a href="#">Stays</a></li>
+                <li><a href="#">Experiences</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="#">Airbnb your home</a>
+            <a href="#" class="language-icon">🌐</a>
+        </div>
+        <div class="nav-profile">
+            <a href="#" class="profile-icon" onclick="toggleDropdown()">☰ 👤</a>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="#" onclick="openSignupForm()">Sign up</a>
+                <a href="#">Log in</a>
+            </div>
+        </div>
+    </nav>
+    <div class="nav-bottom">
+        <div class="search-bar">
+            <div class="search-item">
+                <label>Where</label>
+                <input type="text" placeholder="Search destinations" class="search-input">
+            </div>
+            <div class="search-item">
+                <label>Check in</label>
+                <input type="text" placeholder="Add dates" class="search-input">
+            </div>
+            <div class="search-item">
+                <label>Check out</label>
+                <input type="text" placeholder="Add dates" class="search-input">
+            </div>
+            <div class="search-item">
+                <label>Who</label>
+                <input type="text" placeholder="Add guests" class="search-input">
+            </div>
+            <button class="search-btn">
+                <img src="assets/search icon.png" alt="Search Icon">
+            </button>
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="card-container">
+        <div class="card">
+            <div class="card-image">
+                <img src="assets/x-mansion.jpg" alt="Card 1">
+                <span class="card-badge">Live</span>
+            </div>
+            <div class="card-content">
+                <h5>Train at the X-Mansion</h5>
+                <p>Hosted by Jubilee</p>
+                <h5>₹3,182 per guest</h5>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="assets/kevin.jpeg" alt="Card 2">
+            </div>
+            <div class="card-content">
+                <h5>Go VIP with Kevin Hart</h5>
+                <p>Hosted by Kevin Hart</p>
+                <h5>Coming July</h5>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="assets/house.jpg" alt="Card 3">
+            </div>
+            <div class="card-content">
+                <h5>Stay in Prince’s Purple Rain house</h5>
+                <p>Hosted by Wendy and Lisa</p>
+                <h5>Coming August</h5>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image">
+                <img src="assets/doja.jpeg" alt="Card 4">
+            </div>
+            <div class="card-content">
+                <h5>Join a living room session with Doja</h5>
+                <p>Hosted by Doja Cat</p>
+                <h5>Coming October</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Form -->
+    <div id="signupForm" class="signup-form-container">
+        <div class="signup-form-content">
+            <span class="close-btn" onclick="closeSignupForm()">&times;</span>
+            <h2>Log in or sign up</h2>
+            <h3>Welcome to Airbnb</h3>
+            <input type="text" placeholder="Phone number" class="signup-input">
+            <p class="signup-p">We’ll call or text you to confirm your number. Standard message and data rates apply.</p>
+            <button class="signup-btn">Continue</button>
+            <hr>
+            <button class="signup-btn fb-btn">Continue with Facebook</button>
+            <button class="signup-btn google-btn">Continue with Google</button>
+            <button class="signup-btn apple-btn">Continue with Apple</button>
+            <button class="signup-btn email-btn">Continue with email</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
