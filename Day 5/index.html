@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airbnb</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav class="nav-container">
@@ -25,7 +26,7 @@
             <a href="#" class="profile-icon" onclick="toggleDropdown()">☰ 👤</a>
             <div class="dropdown-menu" id="dropdownMenu">
                 <a href="#" onclick="openSignupForm()">Sign up</a>
-                <a href="#">Log in</a>
+                <a href="#" onclick="openSignupForm()">Log in</a>
             </div>
         </div>
     </nav>
@@ -101,19 +102,22 @@
     <!-- Sign Up Form -->
     <div id="signupForm" class="signup-form-container">
         <div class="signup-form-content">
-            <span class="close-btn" onclick="closeSignupForm()">&times;</span>
-            <h2>Log in or sign up</h2>
+            <div class="header">
+                <span class="close-btn" onclick="closeSignupForm()">&times;</span>
+                <h2>Log in or sign up</h2>
+            </div>
             <h3>Welcome to Airbnb</h3>
             <input type="text" placeholder="Phone number" class="signup-input">
             <p class="signup-p">We’ll call or text you to confirm your number. Standard message and data rates apply.</p>
             <button class="signup-btn">Continue</button>
             <hr>
-            <button class="signup-btn fb-btn">Continue with Facebook</button>
-            <button class="signup-btn google-btn">Continue with Google</button>
-            <button class="signup-btn apple-btn">Continue with Apple</button>
-            <button class="signup-btn email-btn">Continue with email</button>
+            <button class="signup-btn fb-btn"><i class="fa fa-facebook-square"></i>Continue with Facebook</button>
+            <button class="signup-btn google-btn"><i class="fa fa-google"></i>Continue with Google</button>
+            <button class="signup-btn apple-btn"><i class='fa fa-apple'></i>Continue with Apple</button>
+            <button class="signup-btn email-btn"><i class="fa fa-envelope"></i>Continue with email</button>
         </div>
     </div>
+    
 
     <script src="script.js"></script>
 </body>
