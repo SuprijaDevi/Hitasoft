@@ -293,3 +293,6 @@
     border: none;
     border-top: 2px solid rgba(0, 0, 0, 0.1);
 }
+::-webkit-scrollbar {
+    width: 0;
+}

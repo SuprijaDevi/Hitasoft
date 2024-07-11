@@ -1,6 +1,6 @@
 function toggleDropdown() {
     var dropdown = document.getElementById("dropdownMenu");
-    dropdown.style.display = dropdown.style.display === "block" ? "none" : "display";
+    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
 }
 
 function openSignupForm() {
