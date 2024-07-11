@@ -1,6 +1,6 @@
 function toggleDropdown() {
     var dropdown = document.getElementById("dropdownMenu");
-    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+    dropdown.style.display = dropdown.style.display === "block" ? "none" : "display";
 }
 
 function openSignupForm() {
@@ -18,4 +18,8 @@ window.onclick = function(event) {
     if (event.target === signupForm) {
         signupForm.style.display = "none";
     }
+}
+
+function signupSuccessful() {
+    alert("Signup successful");
 }

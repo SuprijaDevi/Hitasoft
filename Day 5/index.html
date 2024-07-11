@@ -25,7 +25,7 @@
         <div class="nav-profile">
             <a href="#" class="profile-icon" onclick="toggleDropdown()">☰ 👤</a>
             <div class="dropdown-menu" id="dropdownMenu">
-                <a href="#" onclick="openSignupForm()">Sign up</a>
+                <a href="#" onclick="openSignupForm()"><span>Sign up</span></a>
                 <a href="#" onclick="openSignupForm()">Log in</a>
             </div>
         </div>
@@ -109,7 +109,7 @@
             <h3>Welcome to Airbnb</h3>
             <input type="text" placeholder="Phone number" class="signup-input">
             <p class="signup-p">We’ll call or text you to confirm your number. Standard message and data rates apply.</p>
-            <button class="signup-btn">Continue</button>
+            <button class="signup-btn" onclick="signupSuccessful()">Continue</button>
             <hr>
             <button class="signup-btn fb-btn"><i class="fa fa-facebook-square"></i>Continue with Facebook</button>
             <button class="signup-btn google-btn"><i class="fa fa-google"></i>Continue with Google</button>
