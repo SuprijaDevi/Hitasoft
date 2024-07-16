@@ -14,11 +14,17 @@
             $nameErr = "Name is required";
         } else {
             $name = test_input($_POST["name"]);
+            if(strlen($name) < 5) {
+                $nameErr = "Name must contain atlest 5 characters.";
+            }
         }
         if(empty($_POST["age"])) {
             $ageErr = "Age is required";
         } else {
             $age = test_input($_POST["age"]);
+            if($age <= 18) {
+                $ageErr = "Age must be above 18";
+            }
         }
         if(empty($_POST["email"])) {
             $emailErr = "Email is required";
@@ -29,11 +35,17 @@
             $phone_numberErr = "Phone number is required";
         } else {
             $phone_number = test_input($_POST["phone-number"]);
+            if(strlen($phone_number) != 10) {
+                $phone_numberErr = "Phone number must contain 10 digits";
+            }
         }
         if(empty($_POST["income"])) {
             $incomeErr = "Income is required";
         } else {
             $income = test_input($_POST["income"]);
+            if($income < 10000) {
+                $incomeErr = "Income must be atleast 10,000";
+            }
         }
         if(empty($_POST["feedback"])) {
             $feedbackErr = "Please fill the feedback";
