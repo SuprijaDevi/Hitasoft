@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+    <title>Form Validation</title>
     <style>
         .error {color: red;}
     </style>
