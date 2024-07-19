@@ -1,3 +1,6 @@
+CREATE DATABASE sales;
+USE sales;
+
 CREATE TABLE `salesinfo` (
     `id` INT NOT NULL auto_increment,
     `productName` VARCHAR (30) NOT NULL,
