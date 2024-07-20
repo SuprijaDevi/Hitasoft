@@ -7,5 +7,5 @@ CREATE TABLE `salesinfo` (
     `productDescription` VARCHAR(50),
     `productCount` INT NOT NULL,
     `sellerName` VARCHAR(30),
-    PRIMARY KEY(`id`);
-)
+    PRIMARY KEY(`id`)
+);

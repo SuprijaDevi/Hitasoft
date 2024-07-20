@@ -27,7 +27,7 @@
                     echo "<td>" . $res['productDescription'] . "</td>";
                     echo "<td>" . $res['productCount'] . "</td>";
                     echo "<td>" . $res['sellerName'] . "</td>";
-                    echo "<td><a href=\"Update.php?id=" . $res['id'] . "\">Update</a> | 
+                    echo "<td><a href=\"update.php?id=" . $res['id'] . "\">Update</a> | 
                     <a href=\"delete.php?id=" . $res['id'] . "\" onClick=\"return confirm('Are you sure?')\">Delete</a></td>";
                 }
             ?>
